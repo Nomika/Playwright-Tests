@@ -1,0 +1,25 @@
+import { expect, Page } from "@playwright/test";
+
+export async function loginMonikaWillow(page: Page): Promise<void>{
+  const baseURL = "https://willow.drzwi.7willows.com/";
+
+  await page.goto(baseURL);
+
+ 
+  await page.locator('input[type="text"]').fill('admin');
+  await page.locator('input[type="password"]').fill('Admin1234');
+  await page.getByRole("button", { name: "Login" }).click();
+
+  await page.waitForLoadState("load");
+
+
+};
+
+import { expect, test } from "@playwright/test";
+//import { loginMonikaWillow} from "./helpers/login-willow-monika";
+import { loginMonikapage } from "./helpers/login-monikaspace";
+
+test("LoginWillow", async ({ page }) => {
+  await loginMonikapage(page, "willow");
+
+});
