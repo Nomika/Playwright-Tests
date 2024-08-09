@@ -1,7 +1,7 @@
 import { expect, Page } from "@playwright/test";
 
-export async function loginMonikaWillow(page: Page): Promise<void>{
-  const baseURL = "https://willow.drzwi.7willows.com/";
+export async function loginMonikademobank(page: Page): Promise<void>{
+  const baseURL = "https://demo-bank.com/";
 
   await page.goto(baseURL);
 
@@ -16,10 +16,10 @@ export async function loginMonikaWillow(page: Page): Promise<void>{
 };
 
 import { expect, test } from "@playwright/test";
-//import { loginMonikaWillow} from "./helpers/login-willow-monika";
-import { loginMonikapage } from "./helpers/login-monikaspace";
+//import { loginMonikademobank1} from "./helpers/login-demobank1.ts";
+import { loginMonikademobanke } from "./helpers/login-demobank.ts";
 
-test("LoginWillow", async ({ page }) => {
-  await loginMonikapage(page, "willow");
+test("Loginbank", async ({ page }) => {
+  await loginMonikademobank(page);
 
 });
