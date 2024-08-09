@@ -1,0 +1,21 @@
+ 
+  // import { expect, Page } from "@playwright/test";
+
+  // export async function loginMonikapage(page: Page, namespace: string): Promise<void> {
+  //   console.log("namespace", namespace);
+  
+  //   const baseURL = `https://${namespace}.marianna.win.com/`;
+  
+  //   await page.goto(baseURL);
+  
+   
+  //   await page.locator('input[type="text"]').fill('admin');
+  //   await page.locator('input[type="password"]').fill('Admin1234');
+  //   await page.getByRole("button", { name: "Login" }).click();
+  
+  //   await page.waitForLoadState("load");
+  
+  //   };
+
+
+  //await loginMonikapage(page, "monikaspace");
